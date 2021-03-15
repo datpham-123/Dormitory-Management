@@ -1,17 +1,7 @@
 .navbar{
-    width: 5rem;
-    height: 100vh;
-
-    transition: all .2s ease;
     background-color: var(--palette1);
-}
 
-/* when hover */
-.navbar:hover{
-    width: 100%;
-}
-.navbar:hover .navlink-text{
-    display: block;
+    position: fixed;
 }
 
 .navbar:hover .navlink-logo{
@@ -69,7 +59,44 @@
     transform: rotate(0deg);
     transition: all .2s;
 }
+ 
+@media screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
 
-@media screen and (max-width: 768px){
+    .navbar:hover{
+        width: 16rem;
+    }
 
+    .navbar:hover .navlink-text{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .navbar{
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-list{
+        flex-direction: row;
+    }
+
+    .navlink{
+        justify-content: center;
+    }
+
+    .main-content{
+        margin: 0;
+    }
 }
