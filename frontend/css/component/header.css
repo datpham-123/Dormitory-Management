@@ -1,0 +1,13 @@
+.header{
+    background-color: var(--palette1);
+    color: var(--palette4);
+}
+
+.header-text{
+    color: currentColor;
+    margin-right: 1rem;
+}
+
+.header-link{
+    color: currentColor;
+}

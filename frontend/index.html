@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap css-->
+    <!-- <link rel="stylesheet" href="./css/vendor/bootstrap.min.css"> -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="./icon/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Home</title>
 </head>
 
@@ -59,12 +66,51 @@
 
     <!-- main layout -->
     <main class="wrapper">
-        <header id="header">Header</header>
-        <section id="section1">Content1</section>
-        <section id="section2">Content2</section>
-        <section id="section3">Content3</section>
-        <main id="main">Main</main>
-        <footer id="footer">Footer</footer>
+        <header id="header" class="header center">
+            <a href="#" class="header-text">datpthe141311</a>
+            <a href="#" class="header-link">Logout</a>
+        </header>
+        <section id="section1">
+            <div class="section1-container">
+                <img src="https://placekitten.com/500/500" alt="kitten" class="section1-image">
+            </div>
+        </section>
+        <section id="section2">
+            <div class="card section2-card">
+                <ul class="section2-list">
+                    <li class="section2-item">Name: Pham Tien Dat</li>
+                    <li class="section2-item">Code: HE141311</li>
+                    <li class="section2-item">Major: Software Engineer</li>
+                    <li class="section2-item">Graduate Year: 2022</li>
+                    <li class="section2-item">Stay in dom since: 02/2021</li>
+
+                </ul>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="card section3-card">
+                <ul class="section3-list">
+                    <li class="section2-item">Dom: A</li>
+                    <li class="section2-item">Room: A101</li>
+                    <li class="section2-item">Bed: 1</li>
+                    <li class="section2-item">Electric used: 20</li>
+                    <li class="section2-item">Water used: 20</li>
+                </ul>
+            </div>
+        </section>
+        <main id="main">
+            <div class="main-container center">
+                <a href="#" class="btn btn-main btn-book hover-effect text-upper">Book a Bed</a>
+                <a href="#" class="btn btn-main btn-bills hover-effect text-upper">View Bills</a>
+                <a href="#" class="btn btn-main btn-pay hover-effect text-upper">Pay Request</a>
+                <a href="#" class="btn btn-main btn-request hover-effect text-upper">Write a Request</a>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-container center">
+                &#169; Copyright 2021 - FPT Education | Developed by <a href="#" class="footer-link">Team2</a>
+            </div>
+        </footer>
     </main>
 </body>
 

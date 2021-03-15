@@ -2,6 +2,15 @@
 @import './base/variables.css';
 @import './base/base.css';
 
+@import './util/util.css';
+
 @import './layout/layout-home.css';
 
+/* index.html */
 @import './component/nav.css';
+@import './component/header.css';
+@import './component/section1.css';
+@import './component/section2.css';
+@import './component/section3.css';
+@import './component/footer.css';
+@import './component/main.css';

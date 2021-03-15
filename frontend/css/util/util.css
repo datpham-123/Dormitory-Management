@@ -1,0 +1,20 @@
+.text-upper{
+    text-transform: uppercase;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    cursor: pointer;
+}

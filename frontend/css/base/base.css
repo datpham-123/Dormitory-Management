@@ -12,6 +12,12 @@ a{
     text-decoration: none;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body::-webkit-scrollbar{
     width: .4rem;
 }
@@ -26,4 +32,5 @@ body::-webkit-scrollbar-thumb{
 
 body{
     font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
 }
