@@ -1,0 +1,101 @@
+body {
+  min-height: 100vh;
+}
+
+#promo {
+  text-align: center;
+  padding: 40px;
+  background: url('../../assets/img/dom-jumpbotron.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 300px) {
+  #promo {
+    padding: 20px;
+  }
+}
+
+#promo .jumbotron {
+  border-bottom: 20px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  #promo .jumbotron {
+    padding: 20px;
+  }
+}
+
+.site-section {
+  text-align: center;
+  padding: 50px 0 60px;
+}
+
+#welcome p {
+  max-width: 800px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+#features .feature-item i {
+  font-size: 40px;
+  color: #7eca9c;
+}
+
+#features .feature-item {
+  margin-top: 36px;
+}
+
+#features .feature-item h2 {
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.section-dark {
+  background-color: #f2f4f5;
+}
+
+#btn-login-google {
+  margin-left: 20px;
+}
+
+#btn-login {
+  background-color: #007bff;
+  min-width: 60px;
+}
+
+#footerpad {
+  padding-left: 40px;
+  padding-bottom: 15px;
+}
+
+#container-bill-header {
+  margin: 30px 0 30px 0;
+}
+
+#container-bill-table {
+  margin: 30px 0 70px 0;
+}
+
+#container-request-response {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#table-checkbed {
+  text-align: center;
+}
+
+#header-about {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#header-error {
+  margin-top: 30px;
+}
+
