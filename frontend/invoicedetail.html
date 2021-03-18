@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="assets/css/Bootstrap-Payment-Form.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Data-Table.css">
-    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
     <link rel="stylesheet" href="assets/css/Table-With-Search.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/invoice-detail.css">
 </head>
 
 <body><nav class="navbar navbar-light navbar-expand-md">
@@ -48,29 +49,112 @@
         </div>
     </div>
 </nav>
-    <div class="container">
-        <h2 class="text-center">Bill Detail</h2>
-    </div>
-    <div class="container">
-        <div class="row"><div class="col-12">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="assets/img/graduate-student-avatar.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-</div></div>
-    </div>
+    <div class="container" id="container-invoicedetail-heading">
+        <h2 class="text-center">Invoice Detail</h2>
+    </div><div class="container" style="margin-bottom: 50px;">
+    <a href="invoice.html" type="button" class="btn btn-primary btn-lg btn-block">All Invoices</a>
+</div>
+    <div class="container">                        
+<div class="receipt-content">
+    <div class="container bootstrap snippets bootdey">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="invoice-wrapper">
+					<div class="intro">
+						Hi <strong>datpthe1413xx</strong>, 
+						<br>
+						This is the receipt for a payment of <strong>800.000</strong> (VND) for your bed booking
+					</div>
+
+					<div class="payment-info">
+						<div class="row">
+							<div class="col-sm-6">
+								<span>Payment No.</span>
+								<strong>434334343</strong>
+							</div>
+							<div class="col-sm-6 text-right">
+								<span>Payment Date</span>
+								<strong>Jan 09, 2021 - 12:20 pm</strong>
+							</div>
+						</div>
+					</div>
+
+					<div class="payment-details">
+						<div class="row">
+							<div class="col-sm-6">
+								<span>datpthe1413xx</span>
+							</div>
+							<div class="col-sm-6 text-right">
+								<span>Payment To</span>
+								<strong>
+									FPT University
+								</strong>
+							</div>
+						</div>
+					</div>
+
+					<div class="line-items">
+						<div class="headers clearfix">
+							<div class="row">
+								<div class="col-4">Description</div>
+								<div class="col-3">Quantity</div>
+								<div class="col-5 text-right">Amount</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="row item">
+								<div class="col-4 desc">
+									Bed 4 people type
+								</div>
+								<div class="col-3 qty">
+									1
+								</div>
+								<div class="col-5 amount text-right">
+									800.000
+								</div>
+							</div>
+						</div>
+						<div class="total text-right">
+							<p class="extra-notes">
+								<strong>Extra Notes</strong>
+								Please send all items at the same time to shipping address by next week.
+								Thanks a lot.
+							</p>
+							<div class="field">
+								Subtotal <span>800.000</span>
+							</div>
+							<div class="field">
+								Discount <span>0%</span>
+							</div>
+							<div class="field grand-total">
+								Total <span>$312.00</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="footer">
+					Copyright © 2021 FPTU
+				</div>
+			</div>
+		</div>
+	</div>
+</div>                    </div>
+    <footer id="footerpad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                    </ul><p class="copyright text-muted text-center">Copyright &copy; Your Company 2021 | Web Design by <a href="about.html">Team 2</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
