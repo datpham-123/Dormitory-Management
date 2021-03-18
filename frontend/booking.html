@@ -28,41 +28,38 @@
     <div class="container"><a class="navbar-brand" href="index.html">OCD</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" href="booking.html">Book</a></li>
-                <li class="nav-item"><a class="nav-link" href="bill.html">Bill</a></li>
-                <li class="nav-item"><a class="nav-link" href="request.html">Request</a></li>
-                <li class="nav-item"><a class="nav-link" href="response.html">Response</a></li>
-                <li class="nav-item"><a class="nav-link" href="pay.html">Pay</a></li>
+                <li class="nav-item"><a class="nav-link active" href="checkbed.html">Check Bed</a></li>
+                <li class="nav-item"><a class="nav-link" href="request.html">Create Request</a></li>
+                
+                <!--  toggle options-->
+                <li class="nav-item">
+                    <div class="dropdown">
+                      <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        datpthe141311
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="invoice.html">View Invoice</a>
+                        <a class="dropdown-item" href="viewrequest.html">View Request</a>
+                        <a class="dropdown-item" href="invoicepay.html">Payments</a>               
+                      </div>
+                    </div>
+                </li>
+                <!--  logout  -->
                 <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
             </ul>
         </div>
     </div>
 </nav>
     <section class="contact-clean">
-        <form data-bss-recipient="9c0a23b12001bdbaea9b0a42cb684586">
+        <form>
             <h2 class="text-center">Booking</h2>
-            <div class="form-group"><label>Dorm</label><select class="form-control">
-                    <option value="12" selected="">Choose a Dom</option>
-                    <option value="13">A</option>
-                    <option value="14">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
-                    <option value="">E</option>
-                    <option value="">F</option>
-                </select></div>
-            <div class="form-group"><label>Room</label><select class="form-control">
-                    <option value="12" selected="">Choose a Room</option>
-                    <option value="13">A101</option>
-                    <option value="14">A102</option>
-                </select></div>
-            <div class="form-group"><label>Bed</label></div><select class="form-control">
-                <option value="12" selected="">Choose a Bed</option>
-                <option value="13">1</option>
-                <option value="14">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-            </select>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Book</button></div>
+            <div class="form-group"><label>Dorm</label><input class="form-control" type="text"></div>
+            <div class="form-group"><label>Room</label><input class="form-control" type="text"></div>
+            <div class="form-group"><label>Bed</label><input class="form-control" type="text"></div><div class="form-group" id="form-group-btn">
+    <a href="checkbed.html" class="btn" id="form-group-btn1" type="button">CANCEL</a>
+    <button class="btn btn-primary" id="form-group-btn2" type="submit">Go TO PAY</button>
+</div>
         </form>
     </section>
     <footer id="footerpad">

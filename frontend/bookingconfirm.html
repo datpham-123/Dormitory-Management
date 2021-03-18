@@ -48,23 +48,13 @@
         </div>
     </div>
 </nav>
-    <div id="form-request">
-        <section class="contact-clean">
-            <form>
-                <h2 class="text-center">Request</h2>
-                <div class="form-group"><label>Type Request</label><select class="form-control">
-                        <option value="1" selected="">All</option>
-                        <option value="2">Checkout</option>
-                        <option value="3">Đăng ký các vấn đề ký túc xá</option>
-                        <option value="4">Đăng ký tạm trú</option>
-                        <option value="5">Yêu cầu khác</option>
-                    </select></div>
-                <div class="form-group"><label>Title</label><input class="form-control" type="text" required=""></div>
-                <div class="form-group"><label>Content</label><textarea class="form-control" name="message" rows="14" required=""></textarea></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">send </button></div>
-            </form>
-        </section>
-    </div>
+    <section class="contact-clean"><form method="post" action="bookingpay.html">
+    <h2 class="text-center">Booking</h2>
+    <div class="form-group"><label>Dorm</label><input type="text" class="form-control" /></div>
+    <div class="form-group"><label>Room</label><input type="text" class="form-control" /></div>
+    <div class="form-group"><label>Bed</label><input type="text" class="form-control" /></div>
+    <div class="form-group" id="form-group-btn"><a href="checkbed.html" class="btn" id="form-group-btn1" type="button">CANCEL</a><button class="btn btn-primary" id="form-group-btn2" type="submit">Go TO PAY</button></div>
+</form></section>
     <footer id="footerpad">
         <div class="container">
             <div class="row">

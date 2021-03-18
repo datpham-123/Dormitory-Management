@@ -1,5 +1,7 @@
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #promo {
@@ -13,6 +15,10 @@ body {
 @media (min-width: 300px) {
   #promo {
     padding: 20px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -27,6 +33,12 @@ body {
 @media (min-width: 576px) {
   #promo .jumbotron {
     padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -68,11 +80,6 @@ body {
   min-width: 60px;
 }
 
-#footerpad {
-  padding-left: 40px;
-  padding-bottom: 15px;
-}
-
 #container-bill-header {
   margin: 30px 0 30px 0;
 }
@@ -97,5 +104,46 @@ body {
 
 #header-error {
   margin-top: 30px;
+}
+
+#footerpad {
+  margin-top: auto;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+#pagination-viewrequest {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pagination-invoice {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-checkbed a {
+  margin: 0 5px 0 5px;
+}
+
+#form-group-btn {
+  display: flex;
+}
+
+#form-group-btn1 {
+  width: 49%;
+  margin-right: 1%;
+  margin-top: 15px;
+  background-color: #dc3545;
+  color: white;
+}
+
+#form-group-btn2 {
+  width: 49%;
+  margin-left: 1%;
 }
 

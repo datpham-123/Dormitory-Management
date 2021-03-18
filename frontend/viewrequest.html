@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body><nav class="navbar navbar-light navbar-expand-md">
+<body>
+    <header><nav class="navbar navbar-light navbar-expand-md">
     <div class="container"><a class="navbar-brand" href="index.html">OCD</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="navbar-nav ml-auto">
@@ -47,23 +48,62 @@
             </ul>
         </div>
     </div>
-</nav>
-    <div id="form-request">
-        <section class="contact-clean">
-            <form>
-                <h2 class="text-center">Request</h2>
-                <div class="form-group"><label>Type Request</label><select class="form-control">
-                        <option value="1" selected="">All</option>
-                        <option value="2">Checkout</option>
-                        <option value="3">Đăng ký các vấn đề ký túc xá</option>
-                        <option value="4">Đăng ký tạm trú</option>
-                        <option value="5">Yêu cầu khác</option>
-                    </select></div>
-                <div class="form-group"><label>Title</label><input class="form-control" type="text" required=""></div>
-                <div class="form-group"><label>Content</label><textarea class="form-control" name="message" rows="14" required=""></textarea></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">send </button></div>
-            </form>
-        </section>
+</nav></header>
+    <h2 class="text-center" id="container-bill-header">View Requests</h2>
+    <div id="container-request-response">
+        <div class="container"><table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Date Create</th>
+                <th>Request Type</th>
+                <th>Purpose</th>
+                <th>Response</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01/01/2020</td>
+                <td>Đăng ký các vấn đề ký túc xá</td>
+                <td>change room from A101L to A102L</td>
+                <td></td>
+                <td>Processing</td>
+            </tr>
+           <tr>
+                <td>01/01/2020</td>
+                <td>Đăng ký tạm trú</td>
+                <td>abnormal in electric price. Our roomates not using that much</td>
+                <td>due to this, your problem has been fixed, old number 50 change to 30</td>
+                <td>Processed</td>
+            </tr>
+            <tr>
+                <td>01/01/2020</td>
+                <td>Checkout</td>
+                <td>change room from B101L to B102L</td>
+                <td>you're not allowed to changed. Because...</td>
+                <td>Processed</td>
+            </tr> 
+            <tr>
+                <td>01/01/2020</td>
+                <td>Yêu cầu khác</td>
+                <td>change room from B101L to B102L</td>
+                <td></td>
+                <td>Processing</td>
+            </tr> 
+        </tbody>
+    </table>
+            <nav id="pagination-viewrequest">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <footer id="footerpad">
         <div class="container">

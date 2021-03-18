@@ -47,24 +47,107 @@
             </ul>
         </div>
     </div>
-</nav>
-    <div id="form-request">
-        <section class="contact-clean">
-            <form>
-                <h2 class="text-center">Request</h2>
-                <div class="form-group"><label>Type Request</label><select class="form-control">
-                        <option value="1" selected="">All</option>
-                        <option value="2">Checkout</option>
-                        <option value="3">Đăng ký các vấn đề ký túc xá</option>
-                        <option value="4">Đăng ký tạm trú</option>
-                        <option value="5">Yêu cầu khác</option>
-                    </select></div>
-                <div class="form-group"><label>Title</label><input class="form-control" type="text" required=""></div>
-                <div class="form-group"><label>Content</label><textarea class="form-control" name="message" rows="14" required=""></textarea></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">send </button></div>
+</nav><div class="container alert alert-primary" style="margin-top: 50px;">
+    <p class="text-center">HE141311 Pay Room Fee 800.000 VNĐ</p>
+</div><div class="container py-5">
+
+  <div class="row">
+    <div class="col-lg-7 mx-auto">
+      <div class="bg-white rounded-lg shadow-sm p-5">
+        <!-- Credit card form tabs -->
+        <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+          <li class="nav-item">
+            <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                                <i class="fa fa-credit-card"></i>
+                                Credit Card
+                            </a>
+          </li>
+          <li class="nav-item">
+            <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                                <i class="fa fa-university"></i>
+                                 Bank Transfer
+                             </a>
+          </li>
+        </ul>
+        <!-- End -->
+
+
+        <!-- Credit card form content -->
+        <div class="tab-content">
+
+          <!-- credit card info-->
+          <div id="nav-tab-card" class="tab-pane fade show active">
+            <p class="alert alert-success">Some text success or error</p>
+            <form role="form" method="post" action="invoicedetail.html">
+              <div class="form-group">
+                <label for="username">Full name (on the card)</label>
+                <input type="text" name="username" placeholder="Jeff Doe" required class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="cardNumber">Card number</label>
+                <div class="input-group">
+                  <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                  <div class="input-group-append">
+                    <span class="input-group-text text-muted">
+                                                <i class="fa fa-cc-visa mx-1"></i>
+                                                <i class="fa fa-cc-amex mx-1"></i>
+                                                <i class="fa fa-cc-mastercard mx-1"></i>
+                                            </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="form-group">
+                    <label><span class="hidden-xs">Expiration</span></label>
+                    <div class="input-group">
+                      <input type="number" placeholder="MM" name="" class="form-control" required>
+                      <input type="number" placeholder="YY" name="" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group mb-4">
+                    <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                                <i class="fa fa-question-circle"></i>
+                                            </label>
+                    <input type="text" required class="form-control">
+                  </div>
+                </div>
+
+
+
+              </div>
+              <button type="submit" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
             </form>
-        </section>
+          </div>
+          <!-- End -->
+
+          <!-- bank transfer info -->
+          <div id="nav-tab-bank" class="tab-pane fade">
+            <h6>Bank account details</h6>
+            <dl>
+              <dt>Bank</dt>
+              <dd> THE WORLD BANK</dd>
+            </dl>
+            <dl>
+              <dt>Account number</dt>
+              <dd>7775877975</dd>
+            </dl>
+            <dl>
+              <dt>QR</dt>
+              <dd><img src="assets/img/qrcode.png" width="150px" height="150px"/></dd>
+            </dl>
+          </div>
+          <!-- End -->
+        </div>
+        <!-- End -->
+
+      </div>
     </div>
+  </div>
+</div>
+
     <footer id="footerpad">
         <div class="container">
             <div class="row">
@@ -74,7 +157,7 @@
                         <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
                         <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
                         <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                    </ul><p class="copyright text-muted text-center">Copyright &copy; Your Company 2021 | Web Design by Team 2</p>
+                    </ul><p class="copyright text-muted text-center">Copyright &copy; Your Company 2021 | Web Design by <a href="about.html">Team 2</a></p>
                 </div>
             </div>
         </div>
