@@ -4,6 +4,22 @@ body {
   flex-direction: column;
 }
 
+a.btn:hover {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
 #promo {
   text-align: center;
   padding: 40px;
@@ -147,11 +163,24 @@ body {
   margin-left: 1%;
 }
 
-h2 {
-}
-
 #container-invoicedetail-heading {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#table-payments-body a:hover {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
 }
 

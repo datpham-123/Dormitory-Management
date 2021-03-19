@@ -7,7 +7,9 @@
     <title>home</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4---Payment-Form.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-Payment-Form.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
@@ -49,42 +51,40 @@
         </div>
     </div>
 </nav>
-    <div class="container">
-        <section class="pricing-table">
-            <div class="container">
-                <div class="center">
-                    <h2>Pay Invoice</h2>
-                    <p class="lead">Payment of electric fee and water fee of individual student.</p>
-                </div>
-                <div class="pricing-area text-center">
-                    <div class="row">
-                        <div class="col-sm-6 plan price green wow fadeInDown">
-                            <ul class="list-group">
-                                <li class="list-group-item heading">
-                                    <h1>Electric</h1>
-                                </li>
-                                <li class="list-group-item"><span>160.000 VNĐ</span></li>
-                                <li class="list-group-item"><span>deadline: 01/03/2021</span></li>
-                                <li class="list-group-item"><span>number of use: 30</span></li>
-                                <li class="list-group-item plan-action"><a class="btn" href="#">Make Payment</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 plan price yellow wow fadeInDown">
-                            <ul class="list-group">
-                                <li class="list-group-item heading">
-                                    <h1>Water</h1>
-                                </li>
-                                <li class="list-group-item"><span>120.000 VNĐ</span></li>
-                                <li class="list-group-item"><span>deadline: 01/03/2021</span></li>
-                                <li class="list-group-item"><span>number of use: 30</span></li>
-                                <li class="list-group-item plan-action"><a class="btn" href="#">Make Payment</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    <div class="container"><div class="table-responsive" style="margin-top: 150px;" id="table-payments">
+        <table class="table">
+            <thead>
+                <th>Type</th>
+                <th>Number of uses</th>
+                <th>Total</th>
+                <th>Deadline</th>
+                <th>Action</th>
+            </thead>    
+            <tbody id="table-payments-body">
+                <tr>
+                    <td>Electric</td>
+                    <td>30</td>
+                    <td>160.000 VNĐ</td>
+                    <td>01 / 03/ 2021</td>
+                    <td><a class="btn btn-outline-primary" href="payment.html" aria-pressed="true">Pay</a></td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>15</td>
+                    <td>140.000 VNĐ</td>
+                    <td>01 / 03/ 2021</td>
+                    <td><a class="btn btn-outline-primary" href="payment.html">Pay</a></td>
+                </tr>
+                <tr>
+                    <td>Fine</td>
+                    <td></td>
+                    <td>300.000 VNĐ</td>
+                    <td>01 / 03/ 2021</td>
+                    <td><a class="btn btn-outline-primary" href="payment.html">Pay</a></td>
+                </tr>
+            </tbody>
+        </table>
+</div></div>
     <footer id="footerpad">
         <div class="container">
             <div class="row">
