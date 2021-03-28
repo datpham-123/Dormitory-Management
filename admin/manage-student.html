@@ -74,9 +74,118 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav><div class="search-box col-md-9">
+    <form action="">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend" id="form-search-inputgroup">
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">All</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Email</a>
+                    <a class="dropdown-item" href="#">Name</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Student Code</a>
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Search input with dropdown button"
+                id="form-search-inputbutton">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-1">Blank Page</h3>
+                    <h3 class="text-dark mb-1">Manage Student</h3>
+                </div>
+                <div class="container-fluid">
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 font-weight-bold">Student's Info</p>
+                        </div><div class="card-body">
+    <div class="row">
+        <div class="col-md-6 text-nowrap">
+            <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show <select
+                        class="form-control form-control-sm custom-select custom-select-sm">
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select></label></div>
+        </div>
+    </div>
+    <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+        <table class="table my-0" id="dataTable">
+            <thead>
+                <tr>
+                    <th>Avatar</th>
+                    <th>Student Code</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg" />
+                    </td>
+                    <td>HE141325</td>
+                    <td>Trinh Ba Minh Ninh</td>
+                    <td>Male</td>
+                    <td>ninhtbmhe141325@fpt.edu.vn</td>
+                    <td><a href="profile-student.html">detail</a></td>
+                </tr>
+                <tr>
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg" />
+                    </td>
+                    <td>HE141326</td>
+                    <td>Vu Tien Khoi</td>
+                    <td>Male</td>
+                    <td>khoibaka123@fpt.edu.vn</td>
+                    <td><a href="profile-student.html">detail</a></td>
+                </tr>
+                <tr>
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg" />
+                    </td>
+                    <td>HE141327</td>
+                    <td>Nguyen Khuong Quan</td>
+                    <td>Male</td>
+                    <td>quanvip1233@fpt.edu.vn</td>
+                    <td><a href="profile-student.html">detail</a></td>
+                </tr>
+                <tr>
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg" />
+                    </td>
+                    <td>HE141328</td>
+                    <td>Pham Tien Dat</td>
+                    <td>Male</td>
+                    <td>datpthe1413xx@fpt.edu.vn</td>
+                    <td><a href="profile-student.html">detail</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-md-6 align-self-center">
+            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+        </div>
+        <div class="col-md-6">
+            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span
+                                aria-hidden="true">«</span></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
+                                aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+                    </div>
                 </div>
             </div>
             <footer class="bg-white sticky-footer">
