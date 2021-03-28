@@ -75,7 +75,92 @@
         </ul>
     </div>
 </nav><div class="container-fluid">
-    <a class="btn btn-primary btn-beautiful" href="manage-room.html">Back</a>
+    <a href="manage-room.html">Back</a>
+</div><div class="container mt-3">
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group"><label><strong>Room</strong></label>
+                    <p>D101</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group"><label><strong>Water Usage</strong></label>
+                    <p>1234 <span>(updated 03/12/2021)</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group"><label><strong>Available bed(s)</strong></label>
+                    <p>7</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group"><label><strong>Electric Usage</strong></label>
+                    <p>1234 <span>(updated 03/12/2021)</span></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div><div class="card shadow container mt-2">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6 text-nowrap">
+                <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show <select
+                            class="form-control form-control-sm custom-select custom-select-sm">
+                            <option value="10" selected>10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select></label></div>
+            </div>
+        </div>
+        <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+            <table class="table my-0" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Bed No</th>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HE141325</td>
+                        <td>Trinh Ba Minh Ninh</td>
+                        <td>Male</td>
+                        <td>0369543469</td>
+                        <td>ninhtbmhe141325@fpt.edu.vn</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27
+                </p>
+            </div>
+            <div class="col-md-6">
+                <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span
+                                    aria-hidden="true">«</span></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
+                                    aria-hidden="true">»</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </div></div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
